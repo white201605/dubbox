@@ -138,7 +138,9 @@
 				<artifactId>maven-jetty-plugin</artifactId>
 				<version>${jetty_version}</version>
 				<configuration>
-					<contextPath>/</contextPath>
+					<webAppConfig>
+						<compactPath>/dubbo-admin</compactPath>
+					</webAppConfig>
 					<scanIntervalSeconds>10</scanIntervalSeconds>
 					<connectors>
 						<connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
